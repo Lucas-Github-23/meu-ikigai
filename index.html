@@ -5,20 +5,24 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Mapa do Ikigai - Lucas</title>
   <style>
+    * {
+      box-sizing: border-box;
+    }
+
     body {
       font-family: Arial, sans-serif;
       background: #f0f0f0;
       margin: 0;
-      height: 100vh;
+      min-height: 100vh;
       display: flex;
-      justify-content: center;
-      align-items: center;
+      flex-direction: column;
     }
 
     .ikigai-container {
       position: relative;
       width: 600px;
       height: 600px;
+      margin: auto;
     }
 
     .circle {
@@ -33,7 +37,6 @@
       text-align: center;
       padding: 20px;
       font-weight: bold;
-      box-sizing: border-box;
     }
 
     .ama { background: #ff9999; top: 0; left: 150px; }
@@ -86,6 +89,15 @@
       font-size: 14px;
       line-height: 1.4;
     }
+
+    footer {
+      margin-top: auto;
+      padding: 15px;
+      text-align: center;
+      font-size: 14px;
+      color: #555;
+      background: #e0e0e0;
+    }
   </style>
 </head>
 <body>
@@ -123,7 +135,6 @@
       </div>
     </div>
 
-    <!-- Interseções com conteúdo real -->
     <div class="intersecao paixao">
       Paixão:<br>
       Criar sites e jogos com propósito
@@ -143,5 +154,7 @@
 
     <div class="centro">Ikigai</div>
   </div>
+  
+  <footer>Desenvolvido por: Lucas Gabriel de Oliveira Pereira</footer>
 </body>
 </html>
