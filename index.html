@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Mapa do Ikigai - Lucas</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f0f0f0;
+      margin: 0;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .ikigai-container {
+      position: relative;
+      width: 600px;
+      height: 600px;
+    }
+
+    .circle {
+      position: absolute;
+      width: 300px;
+      height: 300px;
+      border-radius: 50%;
+      opacity: 0.7;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 20px;
+      font-weight: bold;
+      box-sizing: border-box;
+    }
+
+    .ama { background: #ff9999; top: 0; left: 150px; }
+    .bom { background: #c2e59c; top: 150px; left: 0; }
+    .precisa { background: #fdfd96; top: 150px; left: 300px; }
+    .pago { background: #a1e3e9; top: 300px; left: 150px; }
+
+    .centro {
+      position: absolute;
+      top: 230px;
+      left: 230px;
+      width: 140px;
+      height: 140px;
+      border-radius: 50%;
+      background: #66b3b3;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 24px;
+      font-weight: bold;
+      color: white;
+      z-index: 2;
+      box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    }
+
+    .intersecao {
+      position: absolute;
+      width: 130px;
+      height: 130px;
+      border-radius: 50%;
+      background: rgba(255, 255, 255, 0.8);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 13px;
+      font-weight: bold;
+      text-align: center;
+      padding: 10px;
+      line-height: 1.4;
+      box-shadow: 0 0 6px rgba(0,0,0,0.1);
+      z-index: 1;
+    }
+
+    .paixao { top: 110px; left: 95px; }
+    .missao { top: 110px; left: 405px; }
+    .profissao { top: 390px; left: 95px; }
+    .vocacao { top: 390px; left: 405px; }
+
+    .text-content {
+      font-size: 14px;
+      line-height: 1.4;
+    }
+  </style>
+</head>
+<body>
+  <div class="ikigai-container">
+    <div class="circle ama">
+      <div class="text-content">
+        O que você AMA?<br>
+        - Criar jogos e apps<br>
+        - Programar<br>
+        - Ajudar colegas
+      </div>
+    </div>
+    <div class="circle bom">
+      <div class="text-content">
+        Em que você é BOM?<br>
+        - Desenvolvimento web<br>
+        - Animações<br>
+        - Python
+      </div>
+    </div>
+    <div class="circle precisa">
+      <div class="text-content">
+        Do que o mundo PRECISA?<br>
+        - IA acessível<br>
+        - Sites eficazes<br>
+        - Preservação de jogos
+      </div>
+    </div>
+    <div class="circle pago">
+      <div class="text-content">
+        Pelo que você pode ser PAGO?<br>
+        - Monetização de apps<br>
+        - Sites para negócios<br>
+        - Sistemas
+      </div>
+    </div>
+
+    <!-- Interseções com conteúdo real -->
+    <div class="intersecao paixao">
+      Paixão:<br>
+      Criar sites e jogos com propósito
+    </div>
+    <div class="intersecao missao">
+      Missão:<br>
+      Ajudar pessoas com IA e educação digital
+    </div>
+    <div class="intersecao profissao">
+      Profissão:<br>
+      Desenvolvimento web e soluções sob demanda
+    </div>
+    <div class="intersecao vocacao">
+      Vocação:<br>
+      Criar ferramentas úteis com impacto social
+    </div>
+
+    <div class="centro">Ikigai</div>
+  </div>
+</body>
+</html>
